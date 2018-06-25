@@ -90,10 +90,10 @@ class VariableSequenceClassification(object):
 
 
 if __name__ == '__main__':
-    # from tensorflow.examples.tutorials.mnist import input_data
-    # data = input_data.read_data_sets("MNIST_data/", one_hot=True)
-    from tensorflow.contrib.learn.python.learn.datasets import mnist
-    data = mnist.load_mnist()
+    from tensorflow.examples.tutorials.mnist import input_data
+    data = input_data.read_data_sets("./mnist/", one_hot=True)
+    # from tensorflow.contrib.learn.python.learn.datasets import mnist
+    # data = mnist.load_mnist()
     # We treat images as sequences of pixel rows.
     train, valid, test =\
         data.train.images, data.validation.images, data.test.images
